@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Home_carousel */
+
+.caro_img{
+  width:680px;
+  height:520px;
+}
+.dropdown-menu{
+  /* background-image: url("./Images/many-light-fibers-pinkness.jpg"); */
+  background-color: rgb(215, 213, 246)!important;
+}
+
+#content {
+  position: relative;
+}
+#content img {
+  position: fixed;
+  width: 5%;
+  top: 595px!important;
+  left: 1373px!important;
+  z-index: 9999;
+
+}
+.dPdbIW{
+  margin-left: 1056px;
+}
+
+/* .navbar{
+  background-color: rgb(232, 58, 142)!important;
+  color: whitesmoke!important;
+} */
+/* .active{
+  color: antiquewhite!important;
+} */

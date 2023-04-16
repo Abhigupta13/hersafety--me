@@ -16,8 +16,8 @@ import AnalyticsPage from './Components/AnalyticsPage/AnalyticsPage';
 import ChatBot from "react-simple-chatbot";
 import Footer from './Components/Footer/Footer';
 import Sexual_Violence_Laws from './Components/Sexual_Violence_Laws/Sexual_Violence_Laws';
-import IncidentForm from './Forms/IncidentForm/IncidentForm';
 import SafetyTipForm from './Forms/SafetyTipsForm/SafetyTipForm';
+import Form from './Forms/incidentForm/Form';
 
 function App() {
   let current=0;
@@ -105,14 +105,14 @@ function App() {
         <Route exact path="/home" element={<Home />}/>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path='/shared' element={<Shared/> }/>
-        <Route exact path='/ngo9' element={<NGOs/> }/>
+        <Route exact path='/ngo' element={<NGOs/> }/>
         <Route exact path='/faqs' element={<Faqs/> }/>
         <Route exact path='/fir' element={<FIR_filing/> }/>
         <Route exact path='/sex' element={<Sexual_Violence_Laws/> }/>
         <Route exact path='/help' element={<Help/> }/>
-        <Route exact path='/analytics9' element={<AnalyticsPage/> }/>
-        <Route exact path='/incidentform9' element={<IncidentForm/> }/>
-        <Route exact path='/safetytipform9' element={<SafetyTipForm/> }/>
+        <Route exact path='/analytics' element={<AnalyticsPage/> }/>
+        <Route exact path='/incidentform' element={<Form/> }/>
+        <Route exact path='/safetytipform' element={<SafetyTipForm/> }/>
         <Route exact path='/chatbot' element={ <ChatBot steps={steps}/>  }/>
         {/* <Route exact path='/*' element={ <UnderConstruction/>  }/> */}
         

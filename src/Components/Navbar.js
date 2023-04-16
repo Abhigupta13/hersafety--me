@@ -5,7 +5,7 @@ function Navbar() {
     <>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-light" style={{height:'60px'}}>
   <div className="container-fluid">
-    <a  className="navbar-brand mx-5" href="/home"><img src="https://lh3.googleusercontent.com/5mOfjJYnQakXpeDX53RTFOsdW-1ogWJnMOuUWXYh86uDH_d_ROguxArhD3LmiAmA6g" width="60px" alt=""/> HerSafety</a>
+    <a  className="navbar-brand mx-5" href="/home"><img src="https://play-lh.googleusercontent.com/YI0x2uebd60h9h6v3jnMv3b4RlGSP2CwxUyNhlDDp0PbWKeNgm1CiF_L51hRZtdzIL0" width="60px" alt=""/> HerSafety</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -42,6 +42,7 @@ function Navbar() {
         </li> */}
       </ul>
       <a class="btn btn-danger" href="/help" role="button">Help &#9888;</a>
+      <a class="btn btn-danger ms-5" href="/video" role="button">video </a>
     </div>
   </div>
 </nav>

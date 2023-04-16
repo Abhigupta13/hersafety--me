@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import Checkbox from "@mui/material/Checkbox";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const Consent = ({ consent, setConsent }) => {
   return (
     <div className="consentcontainer">
-      <div className="conditions text-start" >
+      <div className="conditions">
         <p>
           We understand it is difficult to recall one's traumatic experiences.
           If you feel uncomfortable at any time, know that you can exit. If you
@@ -18,14 +19,14 @@ const Consent = ({ consent, setConsent }) => {
         </p>
       </div>
 
-      <div className="consentBox text-start">
-        <input type="checkbox" 
-        className="checkbox" 
-              {...label}
-              onClick={() => {
+      <div className="consentBox">
+        <Checkbox
+          {...label}
+          onClick={() => {
             setConsent(!consent);
-          }}/>
-        <span className="consent ms-4">       I consent</span>
+          }}
+        />
+        <span>I consent</span>
       </div>
     </div>
   );

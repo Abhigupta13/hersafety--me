@@ -1,8 +1,10 @@
 import React from "react";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 
 function IncidentDescription({ formData, setFormData }) {
   return (
-    <div
+    <Box
       component="form"
       sx={{
         "& .MuiTextField-root": { m: 1, width: "100%" },
@@ -11,7 +13,7 @@ function IncidentDescription({ formData, setFormData }) {
       autoComplete="off"
     >
       <div>
-        <textarea
+        <TextField
           id="filled-error"
           label="Title"
           value={formData.title}
@@ -19,18 +21,15 @@ function IncidentDescription({ formData, setFormData }) {
             setFormData({ ...formData, title: event.target.value })
           }
           variant="filled"
-          rows={2}
-          cols={50}
-          placeholder="title"
           fullWidth={true}
           inputProps={{
             maxLength: 30,
           }}
-        ></textarea>
+        ></TextField>
         <div className="incidenttitleanddesc">{formData.title.length}/30</div>
       </div>
       <div>
-        <textarea
+        <TextField
           id="filled-multiline-static"
           label="Enter Your Description Here"
           multiline
@@ -38,9 +37,7 @@ function IncidentDescription({ formData, setFormData }) {
           onChange={(event) =>
             setFormData({ ...formData, message: event.target.value })
           }
-          rows={3}
-          cols={50}
-          placeholder="description"
+          rows={4}
           variant="filled"
           inputProps={{
             maxLength: 300,
@@ -49,7 +46,7 @@ function IncidentDescription({ formData, setFormData }) {
         />
       </div>
       <div className="incidenttitleanddesc">{formData.message.length}/300</div>
-    </div>
+    </Box>
   );
 }
 

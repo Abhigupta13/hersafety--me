@@ -44,10 +44,7 @@
   width:680px;
   height:520px;
 }
-.dropdown-menu{
-  /* background-image: url("./Images/many-light-fibers-pinkness.jpg"); */
-  background-color: rgb(215, 213, 246)!important;
-}
+
 
 #content {
   position: relative;
@@ -71,3 +68,22 @@
 /* .active{
   color: antiquewhite!important;
 } */
+.navbar{
+  background: linear-gradient(90deg, rgb(215 14 176) 0%, rgb(54 151 229) 100%);
+   
+}
+.nav-link:hover {
+  background-color: rgb(76, 20, 161);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+.dropdown-menu{
+  background: linear-gradient(90deg, rgb(197, 142, 219) 0%, rgb(111, 105, 239) 100%);
+     
+}
+.dropdown-item:hover{
+  background-color: rgb(76, 20, 161);
+}
+.dropdown-item{
+  color: white;
+}

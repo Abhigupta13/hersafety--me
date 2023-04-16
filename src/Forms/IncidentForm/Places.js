@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { useState, useMemo } from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
+import "./incidentForm.css";
 import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,

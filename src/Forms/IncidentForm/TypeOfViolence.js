@@ -1,4 +1,6 @@
 import React from "react";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 function TypeOfViolence({ formData, setFormData }) {
   const handleChange = (event) => {
@@ -6,146 +8,210 @@ function TypeOfViolence({ formData, setFormData }) {
   };
 
   return (
-      <>
-       <div className="voilence-container">
-  <div className="btn-group-vertical " role="group"  value={formData.typeOfViolence} onChange={handleChange} sx={{ gap: 2 }}
-        color="info" aria-label="Vertical radio toggle button group" style={{
-            
-            right: '68px',
-
-          }}>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio1"  value="Rape/Sexual Assault"
+    <div>
+      <ToggleButtonGroup
+        orientation="vertical"
+        value={formData.typeOfViolence}
+        exclusive
+        onChange={handleChange}
+        fullWidth={true}
+        sx={{ gap: 1 }}
+        className=""
+        color="info"
+      >
+        <ToggleButtonGroup
+          orientation="horizontal"
+          exclusive
+          onChange={handleChange}
+          value={formData.typeOfViolence}
+          fullWidth={true}
+          sx={{ gap: 2 }}
+        >
+          <ToggleButton
+            value="Rape/Sexual Assault"
             aria-label="Rape/Sexual Assault"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Rape/Sexual Assault</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio2"  value="Chain Snatching/Robbery"
+          >
+            Rape/Sexual Assault
+          </ToggleButton>
+          <ToggleButton
+            value="Chain Snatching/Robbery"
             aria-label="Chain Snatching/Robbery"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Chain Snatching/Robbery</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio3"  value="Domestic Violence"
+          >
+            Chain Snatching/Robbery
+          </ToggleButton>
+        </ToggleButtonGroup>
+
+        <ToggleButtonGroup
+          orientation="horizontal"
+          exclusive
+          onChange={handleChange}
+          value={formData.typeOfViolence}
+          fullWidth={true}
+          sx={{ gap: 2 }}
+        >
+          <ToggleButton
+            value="Domestic Violence"
             aria-label="Domestic Violence"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Domestic Violence</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio4"  value="Physical Assault"
+          >
+            Domestic Violence
+          </ToggleButton>
+          <ToggleButton
+            value="Physical Assault"
             aria-label="Physical Assault"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Physical Assault</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio5" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio5"  value="Stalking"
+          >
+            Physical Assault
+          </ToggleButton>
+        </ToggleButtonGroup>
+
+        <ToggleButtonGroup
+          orientation="horizontal"
+          exclusive
+          onChange={handleChange}
+          value={formData.typeOfViolence}
+          fullWidth={true}
+          sx={{ gap: 2 }}
+        >
+          <ToggleButton
+            value="Stalking"
             aria-label="Stalking"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Stalking</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio6" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio6"  value="Online Harrasment"
+          >
+            Stalking
+          </ToggleButton>
+          <ToggleButton
+            value="Online Harrasment"
             aria-label="Online Harrasment"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Online Harrasment</label>
-  </div>
-  <div className="btn-group-vertical " role="group"  value={formData.typeOfViolence} onChange={handleChange} sx={{ gap: 2 }}
-        color="info" aria-label="Vertical radio toggle button group" style={{
-            
-            right: '0px',
+          >
+            Online Harrasment
+          </ToggleButton>
+        </ToggleButtonGroup>
 
-          }}>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio7" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio7"   value="Ogling/Facial Expressions/Staring"
+        <ToggleButtonGroup
+          orientation="horizontal"
+          exclusive
+          onChange={handleChange}
+          value={formData.typeOfViolence}
+          fullWidth={true}
+          sx={{ gap: 2 }}
+        >
+          <ToggleButton
+            value="Ogling/Facial Expressions/Staring"
             aria-label="Ogling/Facial Expressions/Staring"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Ogling/Facial Expressions/Staring</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio8" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio8"  value="Taking photos without permission"
+          >
+            Ogling/Facial Expressions/Staring
+          </ToggleButton>
+          <ToggleButton
+            value="Taking photos without permission"
             aria-label="Taking photos without permission"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Taking photos without permission</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio9" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio9"  value="Indecent Exposure/Masturbation in public"
+          >
+            Taking photos without permission
+          </ToggleButton>
+        </ToggleButtonGroup>
+
+        <ToggleButtonGroup
+          orientation="horizontal"
+          exclusive
+          onChange={handleChange}
+          value={formData.typeOfViolence}
+          fullWidth={true}
+          sx={{ gap: 2 }}
+        >
+          <ToggleButton
+            value="Indecent Exposure/Masturbation in public"
             aria-label="Indecent Exposure/Masturbation in public"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Indecent Exposure/Masturbation in public</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio10" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio10"  value="Touching /Groping"
+          >
+            Indecent Exposure/Masturbation in public
+          </ToggleButton>
+          <ToggleButton
+            value="Touching /Groping"
             aria-label="Touching /Groping"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Touching /Groping</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio11" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio11"  value="Showing Pornography without consent"
+          >
+            Touching /Groping
+          </ToggleButton>
+        </ToggleButtonGroup>
+
+        <ToggleButtonGroup
+          orientation="horizontal"
+          exclusive
+          onChange={handleChange}
+          value={formData.typeOfViolence}
+          fullWidth={true}
+          sx={{ gap: 2 }}
+        >
+          <ToggleButton
+            value="Showing Pornography without consent"
             aria-label="Showing Pornography without consent"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Showing Pornography without consent</label>
-    <input type="radio" className="btn-check" name="vbtn-radio" id="vbtn-radio12" autocomplete="off"/>
-    <label className="btn btn-outline-primary my-3" for="vbtn-radio12"  value="Commenting/Sexual Invites"
+          >
+            Showing Pornography without consent
+          </ToggleButton>
+          <ToggleButton
+            value="Commenting/Sexual Invites"
             aria-label="Commenting/Sexual Invites"
             style={{
               outlineColor: "#0047ab",
               outlineWidth: "1px",
               outlineStyle: "solid",
             }}
-            >
-            Commenting/Sexual Invites</label>
-  </div>
-</div>
-     
-            </>
-    
+          >
+            Commenting/Sexual Invites
+          </ToggleButton>
+        </ToggleButtonGroup>
+      </ToggleButtonGroup>
+    </div>
   );
 }
 

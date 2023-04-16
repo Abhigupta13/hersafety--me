@@ -11,14 +11,18 @@ import "./incidentForm.css";
 import axios from "axios";
 import { useCallback } from "react";
 import ProgressBar from "../ProgressBar/Progress";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useNavigate } from "react-router-dom";
+import { display, style } from "@mui/system";
+import { Button } from "@mui/material";
 import Consent from "./Consent.js";
 
 function Form() {
   const navigate = useNavigate();
   const curDT = new Date().toLocaleString();
-  const [consent, setConsent] = useState(false);
   const [page, setPage] = useState(0);
+  const [consent, setConsent] = useState(false);
   const [formData, setFormData] = useState({
     age: "",
     identity: "",

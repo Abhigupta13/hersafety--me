@@ -4,8 +4,12 @@ import TypeOfViolence from "./TypeOfViolence";
 import axios from "axios";
 import { useCallback } from "react";
 import ProgressBar from "../ProgressBar/Progress";
-import Places from "./Places";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useNavigate } from "react-router-dom";
+import { display, style } from "@mui/system";
+import { Button } from "@mui/material";
+import Places from "./Places";
 
 function SafetyTipForm() {
   const navigate = useNavigate();
@@ -86,20 +90,20 @@ function SafetyTipForm() {
   const checkPage = () => {
     if (page === FormTitles.length - 1) {
       return (
-        <button className="btn btn-primary"
+        <Button
           onClick={handleSubmit}
         >
           Submit&nbsp;
-        </button>
+        </Button>
       );
     } else {
       return (
-        <button className="btn btn-primary"
+        <Button
           onClick={handleclick}
         >
           Next&nbsp;
-        
-        </button>
+          <ArrowForwardIcon style={{ fontSize: "20px" }} />
+        </Button>
       );
     }
   };
@@ -115,15 +119,15 @@ function SafetyTipForm() {
           <h1 className="formTitles">{FormTitles[page]}</h1>
           <div className="body">{PageDisplay()}</div>
           <div className="IncidentFormBtns">
-            <button className="btn btn-primary"
+            <Button
               disabled={page === 0}
               onClick={() => {
                 setPage((currPage) => currPage - 1);
               }}
             >
-              {/* <ArrowBackIcon style={{ fontSize: "20px" }} /> */}
+              <ArrowBackIcon style={{ fontSize: "20px" }} />
               &nbsp;Prev
-            </button>
+            </Button>
             {checkPage()}
           </div>
         </div>

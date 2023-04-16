@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { useState, useMemo } from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import { useContext } from "react";
-import "../incidentForm/incidentForm.css";
+import "../IncidentForm/incidentForm.css";
 import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,

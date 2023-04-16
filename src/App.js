@@ -17,7 +17,7 @@ import ChatBot from "react-simple-chatbot";
 import Footer from './Components/Footer/Footer';
 import Sexual_Violence_Laws from './Components/Sexual_Violence_Laws/Sexual_Violence_Laws';
 import SafetyTipForm from './Forms/SafetyTipsForm/SafetyTipForm';
-import Form from './Forms/incidentForm/Form';
+import Form from './Forms/IncidentForm/Form';
 
 function App() {
   let current=0;
